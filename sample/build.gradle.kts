@@ -16,6 +16,12 @@ android {
   buildFeatures {
     compose = true
   }
+  buildTypes {
+        release {
+            isMinifyEnabled = true
+            isShrinkResources = true
+        }
+    }
   composeOptions {
     kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
   }
